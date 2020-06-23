@@ -54,7 +54,7 @@
 					<input type="text" class="form-control" name="mobile" id="mobile" placeholder="10 digit mobile no">
 				</div>
 				<button class="btn_1 rounded full-width" onclick="sendOTP();">Send OTP</button>
-				<div class="text-center add_top_10">New to Sparker? <strong><a href="register.html">Sign
+				<div class="text-center add_top_10">New to cuuRa? <strong><a href="register.html">Sign
 							up!</a></strong></div>
 				<!-- </form> -->
 			</div>
@@ -63,19 +63,19 @@
 				<!-- <form> -->
 
 				<div class="form-group">
-					<label>OTP</label>
-					<input type="text" class="form-control" name="otp" id="otp" placeholder="Enter otp">
+					<label>Confirm your OTP</label>
+					<input type="text" class="form-control" name="otp" id="otp" placeholder="Please enter your otp">
 
 				</div>
 
 				<div class="clearfix add_bottom_15">
 					
 					<div class="float-left mt-1">
-						<a id="forgot" href="javascript:void(0);" onclick="changeMobile()" >Change Mobile no ?</a>
+						<a href="javascript:void(0);" onclick="changeMobile()" style="color: #555">Change Mobile no ?</a>
 					</div>
 					
 					<div class="float-right mt-1">
-						<a id="forgot" href="javascript:void(0);" onclick="resendOTP()" >Resend OTP</a>
+						<a  href="javascript:void(0);" onclick="resendOTP()" style="color: #555">Resend OTP</a>
 					</div>
 					
 				</div>
@@ -85,7 +85,7 @@
 				<!-- </form> -->
 			</div>
 
-			<div class="copy">© 2018 Sparker</div>
+			<div class="copy">© 2018 cuuRa</div>
 		</aside>
 	</div>
 	<!-- /login -->
@@ -107,7 +107,8 @@
 		}
 
 		function changeMobile () {
-			alert("change mobile");
+			$("#confirmOTP").css("display", "none");
+			$("#sendOTP").css("display", "block");
 		}
 
 		function resendOTP () {
